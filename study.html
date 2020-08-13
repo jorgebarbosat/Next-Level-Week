@@ -14,26 +14,55 @@
 <body id="page-study">
   <div id="container">
     
-    <div class="logo-container">
-      <img src="/images/logo.svg" alt="Proffy">
-      <h2>Sua Plataforma de estudos Online</h2>
-    </div>
-    <img class="hero-image" src="/images/study.svg" alt="Plataforma de Estudos">
-    
-    <div class="buttons-container">
-      <a class="study" href="/study.html">
-      <img src="/images/icons/study.svg" alt="Estudar">
-      Estudar
-    </a>
-    <a class="give-classes" href="/give-classes.html">
-      <img src="/images/icons/give-classes.svg" alt="Dar Aulas">
-      Dar Aulas
-      </a>
-    </div>
-    <p class="total-connections">
-      Total de 200 conexões já realizadas
-      <img src="/images/icons/purple-heart.svg" alt="Coração roxo">
-    </p>
+    <header class="page-header">
+        <div class="top-bar-container">
+            <a href="/index.html">
+            <img src="/images/icons/back.svg" alt="voltar">
+              </a>
+              <img src="/images/logo.svg" alt="Proffy">
+
+
+        </div>
+        <div class="header-content">
+          <strong>Esses são os proffys disponíveis</strong>
+          <form id="search-teachers">
+          <div class="select-block">
+              <label for="subject"> Matéria</label>
+              <select name="subject" id="subject">
+              <option value="" disabled=""hidden="">Selecione uma opção</option>
+              <option value="1">Artes</option>
+              <option value="2">Biologioa</option>
+              <option value="3">Ciências</option>
+              <option value="4">Educação Física</option>
+              <option value="5">Física</option>
+              <option value="6">Geografia</option>
+              <option value="7">História</option>
+              <option value="8">Matemática</option>
+              <option value="9">Português</option>
+              <option value="10">Química</option>
+              </select>
+          </div>
+            <div class="select-block">
+             <label for="weekday">Dia da semana</label>
+             <select name="weekday" id="weekday">
+               <option value=""disabled="" hidden="">Selecione uma opção</option>
+                <option value="0">Domingo</option>
+                <option value="1">Segunda-Feira</option>
+                <option value="2">Terça-Feira</option>
+                <option value="3">Quarta-Feira</option>
+                <option value="4">Quinta-Feira</option>
+                <option value="5">Sexta-Feira</option>
+                <option value="6">Sábado</option>
+             </select>
+            </div>
+            <div class="input-block">
+              <label for="time">Hora (De 0 até 24)</label>
+              <input name="time" id="time" type="number" min="0" max="24">
+            </div>
+            <button type="submit">Filtrar</button>
+          </form>
+        </div>
+    </header>
   </div>
 
 </body>
